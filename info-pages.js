@@ -7,12 +7,12 @@
 // Dados cadastrais (centralizados para manter tudo consistente)
 const EMPRESA = {
   fantasia: 'Floricultura Margarida',
-  razao: 'Regiane Nogs Consultoria e Investimentos LTDA',
-  cnpj: '65.562.893/0001-04',
-  endereco: 'Rua Sebastião Rodrigues de Souza, 350 — Loteamento Residencial Três Reis, Apucarana/PR — CEP 86806-670',
-  telefone: '(43) 3015-4154',
-  email: 'contato@jasminflores.site',
-  site: 'jasminflores.site',
+  razao: 'Mercia Fernanda Lins do Nascimento Silva',
+  cnpj: '61.825.129/0001-23',
+  endereco: 'Rua Doutor Manoel Borba, 25 — Centro, Cachoeirinha/PE — CEP 55380-000',
+  telefone: '(81) 99658-3443',
+  email: 'contato@margaridaflores.com',
+  site: 'www.floriculturamargarida.site',
   horario: 'Segunda a sexta, das 08h às 20h · Sábados, domingos e feriados, das 08h às 18h'
 };
 

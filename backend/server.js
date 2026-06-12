@@ -123,7 +123,7 @@ const server = http.createServer(async (req, res) => {
         paymentMethod: "pix",
         customer: {
           name: customer.name || "Cliente Floricultura Margarida",
-          email: customer.email || "contato@jasminflores.site",
+          email: customer.email || "contato@margaridaflores.com",
           phone: onlyDigits(customer.phone),
           document: { number: onlyDigits(customer.cpf || (customer.document && customer.document.number)), type: "cpf" },
         },

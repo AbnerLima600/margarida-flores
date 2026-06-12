@@ -6,7 +6,7 @@
 
    A função do PIX está na pasta "api/pix.js" e é publicada JUNTO com o
    site na Vercel. Por isso o endpoint é relativo ("/api/pix") — funciona
-   automaticamente no domínio onde o site estiver (ex.: jasminflores.site).
+   automaticamente no domínio onde o site estiver (ex.: floriculturamargarida.site).
    ════════════════════════════════════════════════════════════════ */
 window.JASMIN_PIX = {
   endpoint: "/api/pix"

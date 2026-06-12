@@ -67,7 +67,7 @@ module.exports = async (req, res) => {
         paymentMethod: "pix",
         customer: {
           name: c.name || "Cliente Floricultura Margarida",
-          email: c.email || "contato@jasminflores.site",
+          email: c.email || "contato@margaridaflores.com",
           phone: onlyDigits(c.phone),
           document: { number: onlyDigits(c.cpf || (c.document && c.document.number)), type: "cpf" },
         },
