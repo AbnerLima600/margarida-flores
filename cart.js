@@ -5,10 +5,10 @@
 
 // ──────────────── MENSAGEM IN-PAGE (substitui o alert nativo) ────────────────
 function showToast(msg) {
-  let t = document.getElementById('jasminToast');
+  let t = document.getElementById('margaridaToast');
   if (!t) {
     t = document.createElement('div');
-    t.id = 'jasminToast';
+    t.id = 'margaridaToast';
     t.style.cssText = 'position:fixed;top:18px;left:50%;transform:translateX(-50%) translateY(-20px);' +
       'z-index:99999;background:#1a1a2e;color:#fff;padding:13px 20px;border-radius:12px;' +
       'font-family:\'DM Sans\',sans-serif;font-size:13.5px;font-weight:700;line-height:1.4;' +
@@ -1625,7 +1625,7 @@ async function showPixScreen() {
   if (pixStep) pixStep.style.display = '';
   startPixTimer(30);
 
-  const cfg = window.JASMIN_PIX || {};
+  const cfg = window.MARGARIDA_PIX || {};
   const endpoint = (cfg.endpoint || '').trim();
   const codeEl = document.getElementById('coPixCode');
   const copyBtn = document.getElementById('coCopyBtn');

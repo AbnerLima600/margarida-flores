@@ -1,6 +1,6 @@
 {
-  "name": "jasmin-pix-backend",
+  "name": "margarida-pix-backend",
   "version": "1.0.0",
   "private": true,
-  "description": "Backend serverless de pagamento PIX (MasterPag) para a Vercel - Floricultura Jamin"
+  "description": "Backend serverless de pagamento PIX (MasterPag) para a Vercel - Floricultura Margarida"
 }

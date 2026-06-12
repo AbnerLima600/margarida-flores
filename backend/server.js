@@ -155,5 +155,5 @@ const server = http.createServer(async (req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`Backend PIX Jasmin rodando em http://localhost:${PORT}`);
+  console.log(`Backend PIX Margarida rodando em http://localhost:${PORT}`);
 });

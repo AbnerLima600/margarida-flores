@@ -1,7 +1,7 @@
 // ═══════════════════════════════════════════════════════════════
 //  EXTRA-PRODUCTS.JS — VERSÃO FINAL
 //  ✅ CestasCompany: fotos/preços/nomes 100% reais (API Shopify)
-//  ✅ Giuliana Flores: IDs reais do sitemap oficial
+//  ✅: IDs reais do sitemap oficial
 //  ❌ Removidas todas as fotos erradas (cervejas, ursos, etc.)
 // ═══════════════════════════════════════════════════════════════
 (function addExtraProducts() {
@@ -109,7 +109,7 @@
 
     // ══════════════════════════════════════════════════════════
     //  CAT 19 · CAFÉ DA MANHÃ
-    //  Fontes: CestasCompany (API Shopify) + Giuliana Flores
+    //  Fontes: CestasCompany (API Shopify) +
     //  IMAGENS 100% REAIS — sem fotos de cerveja/urso/etc.
     // ══════════════════════════════════════════════════════════
 
@@ -156,7 +156,7 @@
       label_text:"Premium", label_bg:"#fef3c7", label_color:"#92400e",
       description:"Cesta comemorativa com mini vaso de Kalanchoê, Wafer Speculous Cacau Show, Butter Cookies Santa Edwiges, tablete de chocolate Te Amo Cacau Show e embalagem exclusiva." },
 
-    // --- Giuliana Flores (IDs reais confirmados do sitemap) ---
+    // --- (IDs reais confirmados do sitemap) ---
     { id:708, category_id:19, active:1, price:"49.90", old_price:"69.90",
       name:"Cesta de Café da Manhã Despertar",
       image: gf("1393"),
@@ -474,7 +474,7 @@
       description:"Cesta de bem-estar com mix de sementes, granola, frutas desidratadas, nozes, mel puro e chás especiais." },
 
 
-    // GF Buques de Rosas (39 itens importados da Giuliana Flores)
+    // GF Buques de Rosas (39 itens importados da)
     { id: 2001, category_id: 25, active: 1, price: "249.90", old_price: "",
       name: "Buquê de Girassol e Rosas Vermelhas",
       image: "https://static.giulianaflores.com.br/images/product/32534gg.jpg?ims=300x300",
@@ -632,10 +632,10 @@
       description: "Buquê de 6 Rosas Vermelhas e Ferrero Existem presentes que falam sem precisar de palavras. Dimensões aproximadas: Largura 20 cm, Altura 21 cm, Diâmetro 50 cm. Produto idêntico à imagem, entrega rápida e segura em todo o Brasil." },
 
     { id: 2027, category_id: 25, active: 1, price: "179.90", old_price: "",
-      name: "Buquê de 6 Rosas Vermelhas e Caixa de Bombom de Chocolate - Giuliana Flores",
+      name: "Buquê de 6 Rosas Vermelhas e Caixa de Bombom de Chocolate -",
       image: "https://static.giulianaflores.com.br/images/product/32978gg.jpg?ims=300x300",
       label_text: "Promoção", label_bg: "#ede9fe", label_color: "#7c3aed",
-      description: "Surpreenda e encante com o Buquê de 6 Rosas Vermelhas e Caixa de Bombom de Chocolate - Giuliana Flores! Dimensões aproximadas: Largura 15 cm, Altura 35 cm, Diâmetro 35 cm. Produto idêntico à imagem, entrega rápida e segura em todo o Brasil." },
+      description: "Surpreenda e encante com o Buquê de 6 Rosas Vermelhas e Caixa de Bombom de Chocolate -! Dimensões aproximadas: Largura 15 cm, Altura 35 cm, Diâmetro 35 cm. Produto idêntico à imagem, entrega rápida e segura em todo o Brasil." },
 
     { id: 2028, category_id: 25, active: 1, price: "224.80", old_price: "",
       name: "Buquê de 12 Rosas Vermelhas e Placa Love",
@@ -653,7 +653,7 @@
       name: "Buquê de 6 Rosas Brancas",
       image: "https://static.giulianaflores.com.br/images/product/26140gg.jpg?ims=300x300",
       label_text: "Promoção", label_bg: "#ede9fe", label_color: "#7c3aed",
-      description: "Buquê de Rosas Brancas - Buquê de Flores | Giuliana Flores Compre Buquê de Rosas Brancas e Presenteie alguém que você ama. Dimensões aproximadas: Largura 15 cm, Altura 35 cm, Diâmetro 35 cm. Produto idêntico à imagem, entrega rápida e segura em todo o Brasil." },
+      description: "Buquê de Rosas Brancas - Buquê de Flores | Compre Buquê de Rosas Brancas e Presenteie alguém que você ama. Dimensões aproximadas: Largura 15 cm, Altura 35 cm, Diâmetro 35 cm. Produto idêntico à imagem, entrega rápida e segura em todo o Brasil." },
 
     { id: 2031, category_id: 25, active: 1, price: "119.90", old_price: "",
       name: "Buquê de 6 Rosas Amarelas",
@@ -837,7 +837,7 @@
       description: "Cesta Premium Prata - o presente perfeito para impressionar! Dimensões aproximadas: Largura 45 cm, Altura 40 cm, Diâmetro 45 cm. Produto idêntico à imagem, entrega rápida e segura em todo o Brasil." },
 
     { id: 2122, category_id: 22, active: 1, price: "599.80", old_price: "",
-      name: "Cesta Aromas e Sabores - Giuliana Flores",
+      name: "Cesta Aromas e Sabores -",
       image: "https://static.giulianaflores.com.br/images/product/33256gg.jpg?ims=300x300",
       label_text: "Promoção", label_bg: "#ede9fe", label_color: "#7c3aed",
       description: "Uma explosão de cor, sabor e perfume para encantar todos os sentidos! Presenteie com delicadeza e criatividade. Dimensões aproximadas: Largura 34 cm, Altura 30 cm, Diâmetro 25 cm. Produto idêntico à imagem, entrega rápida e segura em todo o Brasil." },
@@ -960,7 +960,7 @@
       name: "Delicado Box com Astromélias e Chocolate",
       image: "https://static.giulianaflores.com.br/images/product/31288gg.jpg?ims=300x300",
       label_text: "Promoção", label_bg: "#ede9fe", label_color: "#7c3aed",
-      description: "O Delicado Box com Astromélias e Chocolate da Giuliana Flores é a lembrança ideal para você que busca um mimo singelo e gos. Dimensões aproximadas: Largura 16 cm, Altura 16 cm, Diâmetro 35 cm. Produto idêntico à imagem, entrega rápida e segura em todo o Brasil." },
+      description: "O Delicado Box com Astromélias e Chocolate da é a lembrança ideal para você que busca um mimo singelo e gos. Dimensões aproximadas: Largura 16 cm, Altura 16 cm, Diâmetro 35 cm. Produto idêntico à imagem, entrega rápida e segura em todo o Brasil." },
 
     { id: 2219, category_id: 31, active: 1, price: "112.90", old_price: "",
       name: "Buquê de Rosas Nacionais Vermelho Love",
@@ -1005,10 +1005,10 @@
       description: "Buquê de 6 Rosas Cor de Rosa e Ferrero Existem presentes que falam sem precisar de palavras. Dimensões aproximadas: Largura 20 cm, Altura 21 cm, Diâmetro 50 cm. Produto idêntico à imagem, entrega rápida e segura em todo o Brasil." },
 
     { id: 2226, category_id: 31, active: 1, price: "179.90", old_price: "",
-      name: "Buquê de 6 Rosas Vermelhas e Caixa de Bombom de Chocolate - Giuliana Flores",
+      name: "Buquê de 6 Rosas Vermelhas e Caixa de Bombom de Chocolate -",
       image: "https://static.giulianaflores.com.br/images/product/32978gg.jpg?ims=300x300",
       label_text: "Promoção", label_bg: "#ede9fe", label_color: "#7c3aed",
-      description: "Surpreenda e encante com o Buquê de 6 Rosas Vermelhas e Caixa de Bombom de Chocolate - Giuliana Flores! Dimensões aproximadas: Largura 15 cm, Altura 35 cm, Diâmetro 35 cm. Produto idêntico à imagem, entrega rápida e segura em todo o Brasil." },
+      description: "Surpreenda e encante com o Buquê de 6 Rosas Vermelhas e Caixa de Bombom de Chocolate -! Dimensões aproximadas: Largura 15 cm, Altura 35 cm, Diâmetro 35 cm. Produto idêntico à imagem, entrega rápida e segura em todo o Brasil." },
 
     { id: 2227, category_id: 31, active: 1, price: "281.80", old_price: "",
       name: "Buquê de 12 Rosas Vermelhas e Ferrero",
@@ -1038,7 +1038,7 @@
       name: "Coração de Bombom e Stitch",
       image: "https://static.giulianaflores.com.br/images/product/31784gg.jpg?ims=300x300",
       label_text: "Promoção", label_bg: "#ede9fe", label_color: "#7c3aed",
-      description: "A Giuliana Flores preparou uma coleção especial, que simboliza o valor da amizade e do amor fraternal. Dimensões aproximadas: Largura 24 cm, Altura 10 cm, Diâmetro 21 cm. Produto idêntico à imagem, entrega rápida e segura em todo o Brasil." },
+      description: "A preparou uma coleção especial, que simboliza o valor da amizade e do amor fraternal. Dimensões aproximadas: Largura 24 cm, Altura 10 cm, Diâmetro 21 cm. Produto idêntico à imagem, entrega rápida e segura em todo o Brasil." },
 
     { id: 2232, category_id: 31, active: 1, price: "324.81", old_price: "",
       name: "Coração de Guloseimas com Pelúcia",

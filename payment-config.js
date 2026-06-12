@@ -8,6 +8,6 @@
    site na Vercel. Por isso o endpoint é relativo ("/api/pix") — funciona
    automaticamente no domínio onde o site estiver (ex.: floriculturamargarida.site).
    ════════════════════════════════════════════════════════════════ */
-window.JASMIN_PIX = {
+window.MARGARIDA_PIX = {
   endpoint: "/api/pix"
 };

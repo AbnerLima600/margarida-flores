@@ -1,4 +1,4 @@
-# 🔐 Backend PIX na Vercel — Floricultura Jamin
+# 🔐 Backend PIX na Vercel — Floricultura Margarida
 
 A chave secreta fica **só nas Environment Variables da Vercel** (cofre do painel),
 nunca no site. Fluxo: `Navegador → /api/pix (Vercel) → MasterPag`.
@@ -21,14 +21,14 @@ vercel
 ```
 - Faça login (abre o navegador).
 - Aceite as perguntas com Enter (nome do projeto, etc.).
-- No fim ele te dá uma URL tipo `https://jasmin-pix.vercel.app`.
+- No fim ele te dá uma URL tipo `https://margarida-flores.vercel.app`.
 
 ### 3. Configure as chaves (Environment Variables)
 No painel da Vercel: **seu projeto → Settings → Environment Variables** e adicione:
 
 | Name | Value |
 |---|---|
-| `MASTERPAG_PUBLIC_KEY` | **(cole a chave PÚBLICA `pk_live_...` da SUA conta MasterPag — CNPJ 65.562.893/0001-04)** |
+| `MASTERPAG_PUBLIC_KEY` | **(cole a chave PÚBLICA `pk_live_...` da SUA conta MasterPag — CNPJ 61.825.129/0001-23)** |
 | `MASTERPAG_SECRET_KEY` | **(cole aqui sua chave secreta `sk_live_...`)** |
 | `MASTERPAG_API_URL` | `https://api.masterpag.com/functions/v1` |
 | `ALLOWED_ORIGIN` | `*` (ou o domínio do seu site) |
@@ -39,14 +39,13 @@ No painel da Vercel: **seu projeto → Settings → Environment Variables** e ad
 ```
 vercel --prod
 ```
-Anote a URL final de produção (ex.: `https://jasmin-pix.vercel.app`).
+Anote a URL final de produção (ex.: `https://margarida-flores.vercel.app`).
 
 ### 5. Ligue o site ao backend
 No arquivo **`payment-config.js`** do site, troque o `endpoint`:
 ```js
-window.JASMIN_PIX = {
-  endpoint: "https://jasmin-pix.vercel.app/api/pix",
-  whatsappNumber: "5511999999999"
+window.MARGARIDA_PIX = {
+  endpoint: "https://margarida-flores.vercel.app/api/pix"
 };
 ```
 
