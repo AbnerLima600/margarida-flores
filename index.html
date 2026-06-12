@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>Floricultura Margarida – Floricultura Online | Buquês, Cestas e Presentes</title>
+<meta name="description" content="Floricultura Margarida: floricultura online com entrega rápida de buquês, cestas, flores e presentes para todas as ocasiões em diversas regiões do Brasil. Atendimento e suporte dedicados.">
+<meta name="robots" content="index, follow">
+<meta name="language" content="pt-BR">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='88'%3E%F0%9F%8C%B9%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css?v=48">
+</head>
+<body>
+<!-- Barra de busca global — fixed, visível em qualquer página -->
+<div class="search-bar hidden" id="searchBar">
+  <input type="text" placeholder="Buscar flores, cestas, presentes..." autocomplete="off" spellcheck="false">
+  <button class="search-close">&#x2715;</button>
+</div>
+<div class="overlay" id="overlay"></div>
+<nav class="side-menu" id="sideMenu">
+  <div class="sm-label" style="padding-top:22px;">CATEGORIAS</div>
+  <div id="smCats"></div>
+</nav>
+
+<div class="page active" id="homePage">
+
+  <header class="header">
+    <button class="hbtn" id="menuBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+    <a href="#" class="header-logo">Floricultura <span>Margarida</span></a>
+    <div class="header-actions">
+      <button class="hbtn" id="searchBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+      <button class="hbtn" id="cartBtn" aria-label="Carrinho" onclick="openCartSheet()" style="position:relative"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg><span id="cartBadge" style="position:absolute;top:-6px;right:-6px;background:#ffc400;color:white;font-size:10px;font-weight:700;width:18px;height:18px;border-radius:50%;display:none;align-items:center;justify-content:center">0</span></button>
+    </div>
+  </header>
+
+
+  <div class="region-bar">
+    <span class="region-bar-icon"></span>
+    Entregamos em sua região
+  </div>
+
+  <section class="hero-carousel" id="heroCarousel">
+    <div class="hero-carousel-track" id="heroTrack">
+      <div class="hero-carousel-slide hero-clickable" role="link" tabindex="0" aria-label="Ver categoria Dia dos Namorados" onclick="openCategory(31)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openCategory(31)}">
+        <img src="banner-header-new.png" alt="Floricultura Margarida - Dia dos Namorados" class="hero-carousel-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Bloco de informações da loja (abaixo do header) -->
+  <section class="store-info" id="storeInfo">
+    <div class="si-name">Floricultura Margarida
+      <svg class="si-verified" viewBox="0 0 24 24" aria-label="Perfil verificado"><path fill="#1d9bf0" d="M12 1.5l2.6 1.9 3.2-.3 1 3 2.8 1.6-1 3.1 1 3.1-2.8 1.6-1 3-3.2-.3L12 22.5l-2.6-1.9-3.2.3-1-3L2.4 15l1-3.1-1-3.1 2.8-1.6 1-3 3.2.3L12 1.5z"/><path fill="#fff" d="M10.6 14.3l-2.1-2.1 1.1-1.1 1 1 3.2-3.2 1.1 1.1-4.3 4.3z"/></svg>
+    </div>
+    <div class="si-line"><span class="si-dot"></span> Loja aberta agora</div>
+    <div class="si-line"><svg class="si-ic" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg> Entrega até 35 minutos!</div>
+    <div class="si-rating">
+      <svg class="si-star" viewBox="0 0 24 24" fill="#ffc400"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+      <b>4,7</b> <span class="si-reviews">(1.453 avaliações)</span>
+    </div>
+    <div class="si-pills">
+      <span class="si-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Floricultura mais próxima</span>
+      <span class="si-pill si-pill-green"><svg class="moto" viewBox="0 0 640 512" fill="currentColor" aria-hidden="true"><path d="M512.9 192c-14.9-.1-29.1 2.3-42.4 6.9L437.6 144H520c13.3 0 24-10.7 24-24V104c0-13.3-10.7-24-24-24h-45.4c-9.7 0-18.9 4.4-25 12L432.4 113.2 397.3 56.6C390.9 46.1 379.5 40 367.2 40H304c-8.8 0-16 7.2-16 16v16c0 8.8 7.2 16 16 16h54.7l36.4 58.7-12.3 16.1c-37.3 30.7-39.3 32.4-39.9 33L348 215.5c-49.4-46.5-99.7-46-138.7-39.9l-43.2-66.8C158.5 96.6 145.9 89.4 132.2 88.6 100.2 86.7 65.5 88 64.2 88c-17.7 0-32 14.3-32 32s14.3 32 32 32l68.1.3 35.7 55.2C99.7 263.8 64 318.8 64 384c0 70.7 57.3 128 128 128s128-57.3 128-128c0-13.9-2.2-27.3-6.3-39.8l28.4-37.2c4.8 4.5 9.4 9.3 13.6 14.5C394.6 348.8 384 364.9 384 384c0 70.7 57.3 128 128 128s128-57.3 128-128-57.3-128-127.1-128zM192 448c-35.3 0-64-28.7-64-64s28.7-64 64-64c11.7 0 22.6 3.2 32 8.6L160 384h64c0 35.3-28.7 64-64 64zm320 0c-35.3 0-64-28.7-64-64 0-17.2 6.9-32.8 17.9-44.3l27.9 43.3c4.8 7.4 14.6 9.6 22.1 4.8 7.4-4.8 9.6-14.6 4.8-22.1l-27.9-43.4c4.3-1.5 8.7-2.3 13.4-2.3 35.3 0 64 28.7 64 64s-28.7 64-64 64z"/></svg> Entrega Grátis</span>
+    </div>
+  </section>
+
+  <section class="cats">
+    <div class="cats-scroll" id="catScroll"></div>
+  </section>
+
+  <div id="dynamicSections"></div>
+
+  <div class="feats">
+    <div class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span class="feat-lbl">Entrega<br>Rápida</span></div>
+    <div class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg><span class="feat-lbl">Frete<br>Grátis</span></div>
+    <div class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg><span class="feat-lbl">3x Sem<br>Juros</span></div>
+    <div class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg><span class="feat-lbl">Compra<br>Segura</span></div>
+  </div>
+
+  <footer class="footer">
+    <div class="foot-brand">
+      <span class="foot-logo">floricultura margarida</span>
+      <span class="foot-tagline">Conectamos você às melhores floriculturas parceiras de cada região do Brasil.</span>
+    </div>
+    <div class="foot-cols">
+      <div class="foot-col">
+        <h4>Institucional</h4>
+        <a href="#" onclick="openInfoModal('quemsomos');return false">Quem Somos</a>
+        <a href="#" onclick="openInfoModal('contato');return false">Fale Conosco</a>
+        <a href="#" onclick="openInfoModal('sac');return false">SAC</a>
+        <a href="#" onclick="openInfoModal('corporativo');return false">Corporativo</a>
+      </div>
+      <div class="foot-col">
+        <h4>Políticas</h4>
+        <a href="#" onclick="openInfoModal('termos');return false">Termos de Uso</a>
+        <a href="#" onclick="openInfoModal('privacidade');return false">Privacidade</a>
+        <a href="#" onclick="openInfoModal('cookies');return false">Cookies</a>
+      </div>
+      <div class="foot-col">
+        <h4>Compras</h4>
+        <a href="#" onclick="openInfoModal('entrega');return false">Política de Entrega</a>
+        <a href="#" onclick="openInfoModal('devolucoes');return false">Trocas e Devoluções</a>
+        <a href="#" id="btnCidadesAtendidas">Cidades Atendidas</a>
+      </div>
+    </div>
+    <div class="foot-divider"></div>
+    <div class="foot-copy">© 2026 Floricultura Margarida — CNPJ 65.562.893/0001-04<br>Todos os direitos reservados.</div>
+  </footer>
+</div>
+
+<div class="page" id="detailPage">
+  <div class="det-bar">
+    <button class="det-back" id="backBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg></button>
+    <span class="det-bar-title">Detalhes do Produto</span>
+  </div>
+  <img class="det-img" id="detImg" src="" alt="">
+  <div class="det-body">
+    <div id="detRatingRow" style="display:none"><span class="det-stars" id="detStars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="det-rcount" id="detCount"></span></div>
+    <div class="det-name" id="detName"></div>
+    <div class="det-old" id="detOldPrice" style="display:none;font-size:12px;color:#aaa;text-decoration:line-through;margin-bottom:2px;"></div>
+    <div class="det-price" id="detPrice"></div>
+    <div class="det-desc" id="detDesc"></div>
+    <div class="det-ship" id="detShip"></div>
+    <div id="detTshirtCustomizer" style="margin-bottom: 20px; display: none;"></div>
+    <div id="detAllianceCustomizer" style="margin-bottom: 20px; display: none;"></div>
+    <button class="btn-cart" id="detAddCart">Adicionar ao Carrinho</button>
+  </div>
+</div>
+
+<div class="page" id="categoryPage">
+  <div class="cat-page-bar">
+    <button class="cat-page-back" id="catBackBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <span class="cat-page-title" id="catPageTitle"></span>
+  </div>
+  <div class="cat-page-count" id="catPageCount"></div>
+  <div class="cat-page-grid" id="catPageGrid"></div>
+</div>
+
+<!-- CIDADES ATENDIDAS MODAL (Google SEO e verificação do usuário) -->
+<div class="cidades-modal hidden" id="cidadesModal">
+  <div class="cidades-modal-content">
+    <div class="cidades-modal-hdr">
+      <h3>Cidades Atendidas</h3>
+      <button class="cidades-modal-close" id="btnCidadesClose">&times;</button>
+    </div>
+    <p class="cidades-modal-intro">
+      Entregamos buquês, cestas e arranjos em diversas regiões do Brasil. Como uma plataforma que conecta clientes a parceiros locais, ligamos você a floriculturas selecionadas de cada região para garantir flores frescas e entrega rápida. Confira as cidades atendidas pela nossa rede de parceiros.
+    </p>
+    <div class="cidades-search-box">
+      <input type="text" id="cidadesSearchInput" placeholder="Busque sua cidade (ex: Campinas)...">
+    </div>
+    <div class="cidades-list-container" id="cidadesListContainer">
+      <div class="cidades-state-group" data-state="São Paulo">
+        <h4>São Paulo (SP)</h4>
+        <div class="cidades-grid">
+          <span class="cidade-item">São Paulo</span><span class="cidade-item">Campinas</span><span class="cidade-item">Guarulhos</span><span class="cidade-item">São Bernardo do Campo</span>
+          <span class="cidade-item">Santo André</span><span class="cidade-item">Osasco</span><span class="cidade-item">Ribeirão Preto</span><span class="cidade-item">Sorocaba</span>
+          <span class="cidade-item">Santos</span><span class="cidade-item">São José dos Campos</span><span class="cidade-item">Mogi das Cruzes</span><span class="cidade-item">Jundiaí</span>
+          <span class="cidade-item">Piracicaba</span><span class="cidade-item">Bauru</span><span class="cidade-item">São Vicente</span><span class="cidade-item">Itaquaquecetuba</span>
+          <span class="cidade-item">Carapicuíba</span><span class="cidade-item">Franca</span><span class="cidade-item">Taubaté</span>
+        </div>
+      </div>
+      <div class="cidades-state-group" data-state="Rio de Janeiro">
+        <h4>Rio de Janeiro (RJ)</h4>
+        <div class="cidades-grid">
+          <span class="cidade-item">Rio de Janeiro</span><span class="cidade-item">Niterói</span><span class="cidade-item">Duque de Caxias</span><span class="cidade-item">Nova Iguaçu</span>
+          <span class="cidade-item">São Gonçalo</span><span class="cidade-item">Petrópolis</span><span class="cidade-item">Campos dos Goytacazes</span><span class="cidade-item">Volta Redonda</span>
+          <span class="cidade-item">Cabo Frio</span><span class="cidade-item">Belford Roxo</span><span class="cidade-item">Angra dos Reis</span><span class="cidade-item">Nova Friburgo</span>
+        </div>
+      </div>
+      <div class="cidades-state-group" data-state="Minas Gerais">
+        <h4>Minas Gerais (MG)</h4>
+        <div class="cidades-grid">
+          <span class="cidade-item">Belo Horizonte</span><span class="cidade-item">Uberlândia</span><span class="cidade-item">Contagem</span><span class="cidade-item">Juiz de Fora</span>
+          <span class="cidade-item">Betim</span><span class="cidade-item">Montes Claros</span><span class="cidade-item">Ribeirão das Neves</span><span class="cidade-item">Uberaba</span>
+          <span class="cidade-item">Governador Valadares</span><span class="cidade-item">Ipatinga</span><span class="cidade-item">Sete Lagoas</span><span class="cidade-item">Divinópolis</span>
+        </div>
+      </div>
+      <div class="cidades-state-group" data-state="Paraná">
+        <h4>Paraná (PR)</h4>
+        <div class="cidades-grid">
+          <span class="cidade-item">Curitiba</span><span class="cidade-item">Londrina</span><span class="cidade-item">Maringá</span><span class="cidade-item">Ponta Grossa</span>
+          <span class="cidade-item">Cascavel</span><span class="cidade-item">São José dos Pinhais</span><span class="cidade-item">Foz do Iguaçu</span><span class="cidade-item">Colombo</span>
+        </div>
+      </div>
+      <div class="cidades-state-group" data-state="Rio Grande do Sul">
+        <h4>Rio Grande do Sul (RS)</h4>
+        <div class="cidades-grid">
+          <span class="cidade-item">Porto Alegre</span><span class="cidade-item">Caxias do Sul</span><span class="cidade-item">Canoas</span><span class="cidade-item">Pelotas</span>
+          <span class="cidade-item">Santa Maria</span><span class="cidade-item">Gravataí</span><span class="cidade-item">Viamão</span><span class="cidade-item">Novo Hamburgo</span>
+        </div>
+      </div>
+      <div class="cidades-state-group" data-state="Santa Catarina">
+        <h4>Santa Catarina (SC)</h4>
+        <div class="cidades-grid">
+          <span class="cidade-item">Florianópolis</span><span class="cidade-item">Joinville</span><span class="cidade-item">Blumenau</span><span class="cidade-item">São José</span>
+          <span class="cidade-item">Chapecó</span><span class="cidade-item">Criciúma</span><span class="cidade-item">Itajaí</span><span class="cidade-item">Palhoça</span>
+        </div>
+      </div>
+      <div class="cidades-state-group" data-state="Bahia">
+        <h4>Bahia (BA)</h4>
+        <div class="cidades-grid">
+          <span class="cidade-item">Salvador</span><span class="cidade-item">Feira de Santana</span><span class="cidade-item">Vitória da Conquista</span><span class="cidade-item">Camaçari</span>
+          <span class="cidade-item">Itabuna</span><span class="cidade-item">Juazeiro</span><span class="cidade-item">Ilhéus</span><span class="cidade-item">Lauro de Freitas</span>
+        </div>
+      </div>
+      <div class="cidades-state-group" data-state="Outras Regiões e Capitais">
+        <h4>Outras Capitais e Regiões (Norte, Nordeste, Centro-Oeste)</h4>
+        <div class="cidades-grid">
+          <span class="cidade-item">Brasília (DF)</span><span class="cidade-item">Fortaleza (CE)</span><span class="cidade-item">Recife (PE)</span><span class="cidade-item">Manaus (AM)</span>
+          <span class="cidade-item">Goiânia (GO)</span><span class="cidade-item">Belém (PA)</span><span class="cidade-item">São Luís (MA)</span><span class="cidade-item">Maceió (AL)</span>
+          <span class="cidade-item">Natal (RN)</span><span class="cidade-item">João Pessoa (PB)</span><span class="cidade-item">Teresina (PI)</span><span class="cidade-item">Aracaju (SE)</span>
+          <span class="cidade-item">Campo Grande (MS)</span><span class="cidade-item">Cuiabá (MT)</span><span class="cidade-item">Porto Velho (RO)</span><span class="cidade-item">Macapá (AP)</span>
+          <span class="cidade-item">Rio Branco (AC)</span><span class="cidade-item">Boa Vista (RR)</span><span class="cidade-item">Palmas (TO)</span><span class="cidade-item">Anápolis (GO)</span>
+          <span class="cidade-item">Aparecida de Goiânia (GO)</span><span class="cidade-item">Cariacica (ES)</span><span class="cidade-item">Vila Velha (ES)</span><span class="cidade-item">Vitória (ES)</span>
+          <span class="cidade-item">Serra (ES)</span><span class="cidade-item">Jaboatão dos Guararapes (PE)</span><span class="cidade-item">Olinda (PE)</span><span class="cidade-item">Caruaru (PE)</span>
+          <span class="cidade-item">Campina Grande (PB)</span><span class="cidade-item">Mossoró (RN)</span><span class="cidade-item">Caucaia (CE)</span><span class="cidade-item">Juazeiro do Norte (CE)</span>
+          <span class="cidade-item">Imperatriz (MA)</span><span class="cidade-item">Ananindeua (PA)</span><span class="cidade-item">Santarém (PA)</span><span class="cidade-item">Várzea Grande (MT)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cookie" id="cookieBanner">
+  <p>Floricultura Margarida e os cookies: Nós usamos cookies para personalizar anúncios e melhorar a sua experiência no site. Ao continuar navegando, você concorda com a nossa <a href="#">Política de Privacidade</a> e <a href="#">Política de Cookies</a>.</p>
+  <button class="cookie-btn" id="cookieBtn">Continuar e Fechar</button>
+</div>
+
+<script src="products-data.js?v=3"></script>
+<script src="extra-products.js?v=13"></script>
+<script src="script.js?v=27"></script>
+<script src="payment-config.js?v=11"></script>
+<script src="cart.js?v=47"></script>
+<script src="info-pages.js?v=8"></script>
+<script src="drag-scroll.js?v=2"></script>
+<script src="back-handler.js?v=2"></script>
+</body>
+</html>

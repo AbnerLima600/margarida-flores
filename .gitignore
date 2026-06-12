@@ -1,0 +1,17 @@
+# NUNCA enviar segredos/chaves pro GitHub
+.env
+*.env
+**/.env
+backend/.env
+
+# Pastas de backup antigas (projetos Next.js de referência — NÃO fazem parte do site
+# e contêm chaves secretas reais). Não devem ir pro GitHub.
+amor_backup/
+backup_maio/
+
+# Dependências
+node_modules/
+
+# Sistema
+.DS_Store
+Thumbs.db
