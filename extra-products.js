@@ -47,25 +47,25 @@
     // ── NOVOS · Kits Presente (fotos reais Caneca Curitiba) ──
     { id: 1001, category_id: 31, active: 1, price: "80.75", old_price: "109.90",
       name: "Kit Caneca Mágica com Ímãs de Fotos",
-      image: "https://www.canecacuritiba.com.br/image/cache/catalog/Kit%20presente/kit-presente-personalizado-caneca-ima-foto-curitib-300x300.webp",
+      image: "https://static.giulianaflores.com.br/images/product/30068gg.jpg?ims=300x300",
       label_text: "Personalizável", label_bg: "#fce7f3", label_color: "#9d174d",
       description: "Kit presente personalizado com caneca mágica (que revela a sua foto com o calor da bebida), ímãs de fotos exclusivos, um fofo ursinho de pelúcia e sacola kraft decorada com laço dourado. Tudo personalizado com as suas fotos e mensagem favoritas — a lembrança perfeita para emocionar quem você ama." },
 
     { id: 1002, category_id: 31, active: 1, price: "75.99", old_price: "99.90",
       name: "Kit Caneca Personalizada com Ursinho e Bombons",
-      image: "https://www.canecacuritiba.com.br/image/cache/catalog/Kit%20presente/kit-presente-personalizado-caneca-chocolate-300x300.webp",
+      image: "https://www.uniflores.com.br/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/r/a/ramalhete-de-rosas-com-bombons-e-pel_cia.jpg",
       label_text: "Mais Vendido", label_bg: "#dcfce7", label_color: "#166634",
       description: "Caneca personalizada com a sua arte e foto, acompanhada de um ursinho de pelúcia encantador e uma generosa porção de bombons sortidos, apresentados em sacola kraft com laço dourado. Um presente doce e afetuoso para adoçar o dia de quem você ama." },
 
     { id: 1003, category_id: 31, active: 1, price: "94.04", old_price: "124.90",
       name: "Kit Caixa Surpresa: Caneca, Azulejo e Ursinho",
-      image: "https://www.canecacuritiba.com.br/image/cache/catalog/Kit%20presente/kit-presente-personalizado-azulejo-caneca-curitiba-300x300.webp",
+      image: "https://static.giulianaflores.com.br/images/product/33896gg.jpg?ims=300x300",
       label_text: "Exclusivo", label_bg: "#fef3c7", label_color: "#92400e",
       description: "Caixa presente em kraft com caneca personalizada, azulejo decorativo com foto e mensagem, e um ursinho de pelúcia, montados com muito capricho. Uma surpresa completa e cheia de significado para presentear em qualquer ocasião especial." },
 
     { id: 1004, category_id: 31, active: 1, price: "72.19", old_price: "96.90",
       name: "Kit Caneca com Ursinho e Vaso Decorativo",
-      image: "https://www.canecacuritiba.com.br/image/cache/catalog/Kit%20presente/kit-presente-personalizado-caneca-caixotinho-vaso-300x300.webp",
+      image: "https://static.giulianaflores.com.br/images/product/33619gg.jpg?ims=300x300",
       label_text: "Novo", label_bg: "#fef3c7", label_color: "#92400e",
       description: "Caixote de madeira rústico com caneca personalizada, ursinho de pelúcia e um charmoso vaso decorativo com flores secas e laço dourado. Um presente delicado, aconchegante e cheio de personalidade para encantar." },
 
@@ -1602,19 +1602,19 @@
     // == Ursinho (pelucia) ==
     { id: 3201, category_id: 32, active: 1, price: "75.99", old_price: "99.90",
       name: "Kit Caneca Personalizada com Ursinho e Bombons",
-      image: "https://www.canecacuritiba.com.br/image/cache/catalog/Kit%20presente/kit-presente-personalizado-caneca-chocolate-300x300.webp",
+      image: "https://www.uniflores.com.br/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/r/a/ramalhete-de-rosas-com-bombons-e-pel_cia.jpg",
       label_text: null, label_bg: "#dcfce7", label_color: "#166634",
       description: "Caneca personalizada com a sua arte e foto, acompanhada de um ursinho de pelúcia encantador e uma generosa porção de bombons sortidos, apresentados em sacola kraft com laço dourado. Um presente doce e afetuoso para adoçar o dia de quem você ama." },
 
     { id: 3202, category_id: 32, active: 1, price: "94.04", old_price: "124.90",
       name: "Kit Caixa Surpresa: Caneca, Azulejo e Ursinho",
-      image: "https://www.canecacuritiba.com.br/image/cache/catalog/Kit%20presente/kit-presente-personalizado-azulejo-caneca-curitiba-300x300.webp",
+      image: "https://static.giulianaflores.com.br/images/product/33896gg.jpg?ims=300x300",
       label_text: null, label_bg: "#dcfce7", label_color: "#166634",
       description: "Caixa presente em kraft com caneca personalizada, azulejo decorativo com foto e mensagem, e um ursinho de pelúcia, montados com muito capricho. Uma surpresa completa e cheia de significado para presentear em qualquer ocasião especial." },
 
     { id: 3203, category_id: 32, active: 1, price: "72.19", old_price: "96.90",
       name: "Kit Caneca com Ursinho e Vaso Decorativo",
-      image: "https://www.canecacuritiba.com.br/image/cache/catalog/Kit%20presente/kit-presente-personalizado-caneca-caixotinho-vaso-300x300.webp",
+      image: "https://static.giulianaflores.com.br/images/product/33619gg.jpg?ims=300x300",
       label_text: null, label_bg: "#dcfce7", label_color: "#166634",
       description: "Caixote de madeira rústico com caneca personalizada, ursinho de pelúcia e um charmoso vaso decorativo com flores secas e laço dourado. Um presente delicado, aconchegante e cheio de personalidade para encantar." },
 

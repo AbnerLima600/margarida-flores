@@ -7,7 +7,7 @@ const CATEGORIES = [
   { id: 25, name: 'Buquês de Rosas',    icon: 'https://www.isabelaflores.com/media/catalog/product/b/a/baixa-8-2.jpg' },
   { id: 23, name: 'Kits Especiais',     icon: 'https://static.giulianaflores.com.br/images/product/29155gg.jpg?ims=300x300' },
   { id: 22, name: 'Cestas Românticas',  icon: 'https://static.giulianaflores.com.br/images/product/23290gg.jpg?ims=300x300' },
-  { id: 32, name: 'Ursinho',            icon: 'https://www.canecacuritiba.com.br/image/cache/catalog/Kit%20presente/kit-presente-personalizado-caneca-chocolate-300x300.webp' },
+  { id: 32, name: 'Ursinho',            icon: 'https://www.uniflores.com.br/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/r/a/ramalhete-de-rosas-com-bombons-e-pel_cia.jpg' },
   { id: 19, name: 'Café da Manhã',      icon: 'https://static.giulianaflores.com.br/images/product/25145gg.jpg?ims=300x300' },
   { id: 21, name: 'Buquê + Presente',   icon: 'https://www.isabelaflores.com/media/catalog/product/b/a/baixa-99-2.jpg' },
   { id: 26, name: 'Arranjos em Vaso',   icon: 'https://www.isabelaflores.com/media/catalog/product/b/a/baixa-58-3.jpg' },
