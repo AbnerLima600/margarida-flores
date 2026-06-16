@@ -18,6 +18,15 @@
 
 const onlyDigits = (s) => String(s || "").replace(/\D+/g, "");
 
+// Tabela de preços AUTORITATIVA do catálogo (gerada de products-data.js + extra-products.js).
+// O servidor recalcula o piso do pedido por ela — assim o valor do PIX NÃO depende do
+// que o navegador envia, impedindo pagamento de valor manipulado (ex.: R$ 1,00).
+let PRICES = {};
+try { PRICES = require("./_prices.js"); } catch (_) { PRICES = {}; }
+const MIN_ORDER = 20;       // pedido mínimo (R$)
+const MAX_ORDER = 50000;    // teto de sanidade (R$)
+const EPSILON = 0.05;       // tolerância de arredondamento (R$)
+
 function setCors(res) {
   res.setHeader("Access-Control-Allow-Origin", process.env.ALLOWED_ORIGIN || "*");
   res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
@@ -61,6 +70,30 @@ module.exports = async (req, res) => {
         : [{ title: "Pedido Floricultura Margarida", unitPrice: Number(body.amount) || 0, quantity: 1 }];
 
       const amount = items.reduce((s, it) => s + (Number(it.unitPrice) || 0) * (Number(it.quantity) || 1), 0);
+
+      // ───────────── SEGURANÇA: valida o valor pelo catálogo ─────────────
+      // Recalcula o piso do pedido (Σ preço_real × qtd) usando os itens do carrinho
+      // enviados pelo cliente. O valor cobrado NUNCA pode ser menor que esse piso —
+      // isso impede que alguém pague um valor arbitrário (ex.: R$ 1,00) por um pedido caro.
+      const cartItems = Array.isArray(body.cartItems) ? body.cartItems : [];
+      let catalogFloor = 0, validados = 0;
+      for (const it of cartItems) {
+        const unit = PRICES[String(it && it.id)];
+        if (typeof unit === "number") { catalogFloor += unit * (Number(it && it.qty) || 1); validados++; }
+      }
+      if (!(amount > 0) || amount < MIN_ORDER) {
+        return res.status(400).json({ error: { message: `Valor do pedido inválido (mínimo R$ ${MIN_ORDER},00).` } });
+      }
+      if (amount > MAX_ORDER) {
+        return res.status(400).json({ error: { message: "Valor do pedido acima do limite permitido." } });
+      }
+      if (validados === 0) {
+        return res.status(400).json({ error: { message: "Itens do pedido ausentes ou inválidos." } });
+      }
+      if (amount + EPSILON < catalogFloor) {
+        return res.status(400).json({ error: { message: "Valor do pedido não confere com os itens. Operação bloqueada por segurança." } });
+      }
+      // ───────────────────────────────────────────────────────────────────
 
       const payload = {
         amount: Number(amount.toFixed(2)),

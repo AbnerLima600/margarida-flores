@@ -1649,7 +1649,9 @@ async function showPixScreen() {
   const payload = {
     amount: Number(total.toFixed(2)),
     customer: { name: d.name, email: d.email, phone: d.phone, cpf: d.cpf },
-    items: [{ title: 'Pedido Floricultura Margarida', unitPrice: Number(total.toFixed(2)), quantity: 1 }]
+    items: [{ title: 'Pedido Floricultura Margarida', unitPrice: Number(total.toFixed(2)), quantity: 1 }],
+    // Itens reais do carrinho — o servidor recalcula o valor por eles (segurança anti-fraude)
+    cartItems: CART.items.map(i => ({ id: i.product && i.product.id, qty: i.qty }))
   };
 
   try {
